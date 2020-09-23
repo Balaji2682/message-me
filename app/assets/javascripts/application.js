@@ -15,4 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
-//= require semantic-ui/dropdown
+//= require semantic-ui
+
+$(document).on('turbolinks:load', function (){
+    $('.ui.dropdown').dropdown();
+})
